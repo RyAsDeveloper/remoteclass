@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+
+html {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 125%;
+
+}
+
+
+p {
+    margin-left: 5%;
+    font-weight: bolder;
+}
+
+.table {
+    border-collapse:  collapse; /* セルの線を重ねる */
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+th {
+    border: solid 2px;
+    padding: 10px;
+}
+
+td {
+    border: solid 1px;
+    padding: 10px;
+}
+
+.gray {
+    background-color: rgb(236, 235, 235);
+    
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 375px) { /*スマホ*/
+    html {
+        font-size: 100%; /*1rem = 10px*/
+    }
+
+    p {
+        margin-left: 1%;
+    }
+
+        /*以下、テーブルのスクロール用*/
+    .scroll table{
+        margin-left: 1%;
+        margin-right: 1%;
+
+        width:100%;
+        }
+        .scroll{
+        overflow: auto; /*tableをスクロールさせる*/
+        white-space: nowrap; /*tableのセル内にある文字の折り返しを禁止*/
+        }
+        .scroll::-webkit-scrollbar{ /*tableにスクロールバーを追加*/
+        height: 5px;
+        }
+        .scroll::-webkit-scrollbar-track{ /*tableにスクロールバーを追加*/
+        background: #F1F1F1;
+        }
+        .scroll::-webkit-scrollbar-thumb { /*tableにスクロールバーを追加*/
+        background: #BCBCBC;
+    }
+
+}
+
